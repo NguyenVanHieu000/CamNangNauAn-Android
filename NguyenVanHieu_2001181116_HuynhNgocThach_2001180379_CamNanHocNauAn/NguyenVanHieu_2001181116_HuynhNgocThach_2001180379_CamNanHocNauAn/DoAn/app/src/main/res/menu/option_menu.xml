@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Món ăn yêu thích"
+        android:id="@+id/mnuFavorite"
+        android:icon="@drawable/ic_baseline_favorite_24"/>
+    <item android:title="Đánh giá ứng dụng"
+        android:id="@+id/mnuRate"
+        android:icon="@drawable/ic_baseline_star_24"/>
+    <item android:title="Thông tin ứng dụng"
+        android:id="@+id/mnuInforApp"
+        android:icon="@drawable/ic_baseline_info_24"/>
+
+</menu>

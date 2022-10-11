@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationFood">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/constrain_top"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#D58585"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/head_Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/allfoodlayout"
+                    android:scaleType="fitXY">
+
+                </ImageView>
+
+                <Button
+                    android:id="@+id/addFavorite"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bordercorner"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="-10dp"
+                    android:paddingBottom="0dp"
+                    android:text="+"
+                    android:textSize="33sp">
+
+                </Button>
+
+            </FrameLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:background="@drawable/botborder"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/titlefood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="20dp"
+                    android:text="abc"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titleFavorite" />
+
+                <TextView
+                    android:id="@+id/NGUYENLIEU"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="20dp"
+                    android:text="NGUYÊN LIỆU"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="@id/titlefood"
+                    app:layout_constraintTop_toBottomOf="@+id/titlefood" />
+
+                <TextView
+                    android:id="@+id/resourcefood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="20dp"
+                    android:text="cac nguyen lieu"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="@id/NGUYENLIEU"
+                    app:layout_constraintTop_toBottomOf="@+id/NGUYENLIEU" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgfood"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="16dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/menu_relalayout_1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintCircleRadius="90dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="@id/resourcefood"
+                    app:layout_constraintTop_toBottomOf="@+id/resourcefood"
+                app:shapeAppearanceOverlay="@style/roundImg"/>
+
+                <TextView
+                    android:id="@+id/CHEBIEN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="20dp"
+                    android:text="CHẾ BIẾN"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgfood">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/processfood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="20dp"
+                    android:text="cac buoc che bien"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/CHEBIEN"
+                    app:layout_constraintTop_toBottomOf="@+id/CHEBIEN"></TextView>
+
+                <TextView
+                    android:id="@+id/titleFavorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="30dp"
+                    android:shadowRadius="@dimen/material_emphasis_disabled"
+                    android:text="abc"
+                    android:textColor="#FF5722"
+                    android:textSize="30dp"
+                    android:textStyle="normal|bold|italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</FrameLayout>
